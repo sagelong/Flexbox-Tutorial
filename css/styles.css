@@ -22,7 +22,9 @@ img {
 
 .flexbox-container {
   background-color: lightcoral;
+  min-height: 800px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .flexbox-item {
@@ -34,12 +36,16 @@ img {
 
 .item-1 {
   min-height: 100px;
+  flex-grow: 2;
+  flex-basis: 0;
 }
 
 .item-2 {
   min-height: 200px;
+  flex-shrink: 0;
 }
 
 .item-3 {
   min-height: 300px;
+  flex: 1 0 0;
 }
